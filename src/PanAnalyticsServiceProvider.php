@@ -1,18 +1,20 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace DinisEsteves\Pulse\PanAnalytics;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use DinisEsteves\Pulse\PanAnalytics\Livewire\PulseAnalytics;
+use Illuminate\Foundation\Application;
+use Illuminate\Support\ServiceProvider;
+use Livewire\LivewireManager;
 
-class PanAnalyticsServiceProvider extends PackageServiceProvider
+class PanAnalyticsServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'outdated');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'PanAnalytics');
 
         $this->callAfterResolving('livewire', function (LivewireManager $livewire, Application $app) {
-            $livewire->component('outdated', Outdated::class);
+            $livewire->component('outdated', PulseAnalytics::class);
         });
     }
 }
