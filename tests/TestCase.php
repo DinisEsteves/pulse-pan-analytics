@@ -13,4 +13,6 @@ class TestCase extends Orchestra
     use WithWorkbench;
     use WithWorkbench;
     use WithWorkbench;
+    use LazilyRefreshDatabase;
+    use WithWorkbench;
 }
