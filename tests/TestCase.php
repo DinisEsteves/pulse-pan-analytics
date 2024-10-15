@@ -1,11 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace DinisEsteves\Pulse\PanAnalytics\Tests;
 
+use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
+    use WithWorkbench;
+    use LazilyRefreshDatabase;
     use WithWorkbench;
 }

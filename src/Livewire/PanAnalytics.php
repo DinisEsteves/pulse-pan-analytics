@@ -7,7 +7,7 @@ use Laravel\Pulse\Livewire\Card;
 use Pan\Adapters\Laravel\Repositories\DatabaseAnalyticsRepository;
 use Pan\Presentors\AnalyticPresentor;
 
-class PulseAnalytics extends Card
+class PanAnalytics extends Card
 {
     public function getData(): array
     {
@@ -21,7 +21,7 @@ class PulseAnalytics extends Card
 
     public function render()
     {
-        return View::make('livewire.pulse-pan', [
+        return View::make('pan-analytics::livewire.pan-analytics', [
             'analytics' => $this->getData(),
         ]);
     }
