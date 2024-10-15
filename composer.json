@@ -40,7 +40,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "pulse-pan-analytics\\Tests\\": "tests/",
+            "DinisEsteves\\Pulse\\PanAnalytics\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -71,7 +71,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "pulse-pan-analytics\\SkeletonServiceProvider"
+                "DinisEsteves\\Pulse\\PanAnalytics\\PanAnalyticsServiceProvider"
             ]
         }
     },
