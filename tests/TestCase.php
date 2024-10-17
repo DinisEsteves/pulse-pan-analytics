@@ -9,8 +9,8 @@ use Orchestra\Testbench\TestCase as Orchestra;
 class TestCase extends Orchestra
 {
     use LazilyRefreshDatabase;
-    use WithWorkbench;
-    use WithWorkbench;
     use LazilyRefreshDatabase;
+    use WithWorkbench;
+    use WithWorkbench;
     use WithWorkbench;
 }
