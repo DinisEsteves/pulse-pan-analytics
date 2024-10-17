@@ -10,9 +10,9 @@ class TestCase extends Orchestra
 {
     use LazilyRefreshDatabase;
     use LazilyRefreshDatabase;
-    use WithWorkbench;
-    use WithWorkbench;
-    use WithWorkbench;
     use LazilyRefreshDatabase;
+    use WithWorkbench;
+    use WithWorkbench;
+    use WithWorkbench;
     use WithWorkbench;
 }

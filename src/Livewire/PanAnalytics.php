@@ -11,8 +11,8 @@ class PanAnalytics extends Card
 {
     public function getData(): array
     {
-        $analytic = new DatabaseAnalyticsRepository;
-        $presenter = new AnalyticPresentor;
+        $analytic = new DatabaseAnalyticsRepository();
+        $presenter = new AnalyticPresentor();
 
         $data = collect($analytic->all())->map(fn ($item) => $presenter->present($item));
 
