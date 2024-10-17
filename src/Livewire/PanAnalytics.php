@@ -2,27 +2,25 @@
 
 namespace DinisEsteves\Pulse\PanAnalytics\Livewire;
 
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use Laravel\Pulse\Livewire\Card;
-use Pan\Adapters\Laravel\Repositories\DatabaseAnalyticsRepository;
-use Pan\Presentors\AnalyticPresentor;
+use Livewire\Attributes\Lazy;
 
 class PanAnalytics extends Card
 {
-    public function getData(): array
-    {
-        $analytic = new DatabaseAnalyticsRepository;
-        $presenter = new AnalyticPresentor;
-
-        $data = collect($analytic->all())->map(fn ($item) => $presenter->present($item));
-
-        return $data->toArray();
-    }
-
+    #[Lazy]
     public function render()
     {
         return View::make('pan-analytics::livewire.pan-analytics', [
-            'analytics' => $this->getData(),
+            'analytics' => $this->getData()->toArray(),
         ]);
+    }
+
+    private function getData(): Collection
+    {
+        return DB::table('pan_analytics')
+            ->get();
     }
 }
