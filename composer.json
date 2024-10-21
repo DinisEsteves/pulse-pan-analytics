@@ -1,6 +1,5 @@
 {
     "name": "dinisesteves/pulse-pan-analytics",
-    "version": "1.0.0",
     "description": "Pan Analytics card for Laravel Pulse",
     "keywords": [
         "laravel",
