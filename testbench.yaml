@@ -6,6 +6,7 @@ providers:
 
 migrations:
   - vendor/panphp/pan/database/migrations
+  - vendor/laravel/pulse/database/migrations
 
 seeders:
   - Workbench\Database\Seeders\DatabaseSeeder

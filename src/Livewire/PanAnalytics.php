@@ -21,6 +21,8 @@ class PanAnalytics extends Card
     private function getData(): Collection
     {
         return DB::table('pan_analytics')
+            ->orderBy('impressions', 'desc')
+            ->limit(10)
             ->get();
     }
 }
