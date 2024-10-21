@@ -1,0 +1,11 @@
+providers:
+  - Livewire\LivewireServiceProvider
+  - Laravel\Pulse\PulseServiceProvider
+  - DinisEsteves\Pulse\PanAnalytics\PanAnalyticsServiceProvider
+  - Workbench\App\Providers\WorkbenchServiceProvider
+
+migrations:
+  - vendor/panphp/pan/database/migrations
+
+seeders:
+  - Workbench\Database\Seeders\DatabaseSeeder
