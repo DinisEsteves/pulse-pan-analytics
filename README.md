@@ -1,4 +1,7 @@
 # Pan Analytics card for Laravel Pulse
+<p align="center">
+    <img src="https://raw.githubusercontent.com/DinisEsteves/pulse-pan-analytics/refs/heads/main/docs/pulse-pan-analytics.png" width="100%" alt="Pan">
+</p>
 
 ---
 This card will display the [pan](https://github.com/panphp/pan) analytics data;
