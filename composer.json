@@ -1,9 +1,12 @@
 {
     "name": "dinisesteves/pulse-pan-analytics",
     "version": "1.0.0",
-    "description": ":package_description",
+    "description": "Pan Analytics card for Laravel Pulse",
     "keywords": [
-        "laravel"
+        "laravel",
+        "pulse",
+        "pan",
+        "analytics"
     ],
     "homepage": "https://github.com/DinisEsteves/pulse-pan-analytics",
     "license": "MIT",
