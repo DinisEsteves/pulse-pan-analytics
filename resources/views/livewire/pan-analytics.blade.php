@@ -23,21 +23,21 @@
                     <tbody>
                     @foreach ($analytics as $item)
                         <tr class="h-2 first:h-0"></tr>
-                        <tr wire:key="{{ $item->name }}">
+                        <tr wire:key="{{ $item['name'] }}">
                             <x-pulse::td numeric class="text-gray-700 dark:text-gray-300 font-bold">
-                                {!! $item->id !!}
+                                {!! $item['id'] !!}
                             </x-pulse::td>
                             <x-pulse::td numeric class="text-gray-700 dark:text-gray-300 font-bold">
-                                {!! $item->name !!}
+                                {!! $item['name'] !!}
                             </x-pulse::td>
                             <x-pulse::td numeric class="text-gray-700 dark:text-gray-300 font-bold">
-                                {{ $item->impressions }}
+                                {{ $item['impressions'] }}
                             </x-pulse::td>
                             <x-pulse::td numeric class="text-gray-700 dark:text-gray-300 font-bold">
-                                {{ $item->hovers }}
+                                {{ $item['hovers'] }}
                             </x-pulse::td>
                             <x-pulse::td numeric class="text-gray-700 dark:text-gray-300 font-bold">
-                                {{ $item->clicks }}
+                                {{ $item['clicks'] }}
                             </x-pulse::td>
                         </tr>
                     @endforeach

@@ -2,7 +2,7 @@ providers:
   - Livewire\LivewireServiceProvider
   - Laravel\Pulse\PulseServiceProvider
   - DinisEsteves\Pulse\PanAnalytics\PanAnalyticsServiceProvider
-  - Workbench\App\Providers\WorkbenchServiceProvider
+  - Pan\Adapters\Laravel\Providers\PanServiceProvider
 
 migrations:
   - vendor/panphp/pan/database/migrations
